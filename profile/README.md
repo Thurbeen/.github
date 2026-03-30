@@ -1,0 +1,8 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Thurbeen/.github-private/main/figures/thurbeen-emblem.svg" width="600" alt="Thurbeen Banner" />
+</p>
+
+## Projects
+
+- 📦 [thurbox](https://github.com/Thurbeen/thurbox) — TUI for agentic code orchestration
+- 🔍 [gdcruiser](https://github.com/Thurbeen/gdcruiser) — GDScript architecture validator
