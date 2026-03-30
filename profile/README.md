@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Thurbeen/.github-private/main/figures/thurbeen-emblem.svg" width="600" alt="Thurbeen Banner" />
+  <img src="https://raw.githubusercontent.com/Thurbeen/.github/master/figures/thurbeen-emblem.svg" width="600" alt="Thurbeen Banner" />
 </p>
 
 ## Projects
