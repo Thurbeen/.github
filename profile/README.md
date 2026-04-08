@@ -7,3 +7,4 @@
 - 📦 [thurbox](https://github.com/Thurbeen/thurbox) — TUI for agentic code orchestration
 - 🔍 [gdcruiser](https://github.com/Thurbeen/gdcruiser) — GDScript architecture validator
 - 🤖 [claude-code-job](https://github.com/Thurbeen/claude-code-job) — Docker image for Claude Code automation jobs
+- 🧩 [template](https://github.com/Thurbeen/template) — Starter template for Thurbeen projects
