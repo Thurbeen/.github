@@ -10,4 +10,5 @@
 - 🤖 [claude-code-job](https://github.com/Thurbeen/claude-code-job) — Docker image for Claude Code automation jobs
 - 🐧 [thurarch](https://github.com/Thurbeen/thurarch) — Opinionated Arch Linux setup
 - 🧠 [thurbeen-skills](https://github.com/Thurbeen/thurbeen-skills) — Thurbeen workflow skills for Claude Code
+- 🐧 [thurarch](https://github.com/Thurbeen/thurarch) — Opinionated Arch Linux setup
 - 🧩 [template](https://github.com/Thurbeen/template) — Starter template for Thurbeen projects
