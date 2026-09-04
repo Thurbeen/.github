@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 64" role="img" aria-label="thurbeen">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -4 286 70" role="img" aria-label="thurbeen">
+  <rect x="-8" y="-4" width="286" height="70" rx="14" fill="#1a080a"/>
   <!-- mark: the org root distributing to its projects -->
   <g>
     <rect x="6" y="7" width="52" height="27" rx="8" fill="#1a080a"/>
