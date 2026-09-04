@@ -19,7 +19,6 @@
 - **[thurbox](https://github.com/Thurbeen/thurbox)** — TUI for agentic code orchestration, written in Rust. [thurbox.thurbeen.eu](https://thurbox.thurbeen.eu/)
 - **[homebrew-thurbox](https://github.com/Thurbeen/homebrew-thurbox)** — Homebrew tap: `brew install thurbeen/thurbox/thurbox`.
 - **[fleet-template](https://github.com/Thurbeen/fleet-template)** — Template control plane: a live map of your repos plus self-contained thurbox orchestration.
-- **[thurbeen-skills](https://github.com/Thurbeen/thurbeen-skills)** — Centralized Claude Code skills and commands shared across every Thurbeen project.
 
 ## 🧩 thurbox panes
 
