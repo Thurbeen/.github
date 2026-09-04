@@ -7,6 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white" alt="Rust" />
   <img src="https://img.shields.io/badge/Lua-2C2D72?logo=lua&logoColor=white" alt="Lua" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Ruby-CC342D?logo=ruby&logoColor=white" alt="Ruby" />
   <img src="https://img.shields.io/badge/Shell-4EAA25?logo=gnubash&logoColor=white" alt="Shell" />
@@ -28,6 +29,7 @@
 
 ## 🧰 Developer tooling
 
+- **[thurview](https://github.com/Thurbeen/thurview)** — Guided, evidence-anchored reviews of agent-written code, read and answered in the browser.
 - **[gdcruiser](https://github.com/Thurbeen/gdcruiser)** — Validate and visualize your architecture rules in GDScript.
 - **[template](https://github.com/Thurbeen/template)** — Starter template for bootstrapping new Thurbeen projects.
 - **[thurarch](https://github.com/Thurbeen/thurarch)** — Opinionated Arch Linux install script.
