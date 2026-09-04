@@ -1,213 +1,25 @@
-<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
-      <stop offset="40%" style="stop-color:#DAA520;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
-    </radialGradient>
-
-    <linearGradient id="bladeMetal1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
-    </linearGradient>
-
-    <linearGradient id="bladeMetal2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#CD7F32;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#B8860B;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8B6914;stop-opacity:1" />
-    </linearGradient>
-
-    <linearGradient id="energyGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#DAA520;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
-    </linearGradient>
-
-    <radialGradient id="shieldGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#8B6914;stop-opacity:0.9" />
-      <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
-    </radialGradient>
-
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#DAA520;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
-    </linearGradient>
-
-    <filter id="dramaticShadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
-      <feOffset dx="1.5" dy="1.5" result="offsetblur"/>
-      <feComponentTransfer>
-        <feFuncA type="linear" slope="0.6"/>
-      </feComponentTransfer>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
-      <feOffset dx="0" dy="0" result="offsetblur"/>
-      <feFlood flood-color="#FFD700" flood-opacity="0.8"/>
-      <feComposite in2="offsetblur" operator="in"/>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <filter id="innerGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
-      <feComposite in="blur" in2="SourceGraphic" operator="out" result="inverse"/>
-      <feFlood flood-color="#FFA500" flood-opacity="0.9" result="color"/>
-      <feComposite in="color" in2="inverse" operator="in" result="glow"/>
-      <feMerge>
-        <feMergeNode in="glow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
-      <feFlood flood-color="#FFD700" flood-opacity="0.4"/>
-      <feComposite in2="SourceAlpha" operator="in"/>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-
-  <!-- Dark background -->
-  <rect width="800" height="200" fill="#0F0F1E" rx="8"/>
-
-  <!-- Subtle horizontal decorative lines -->
-  <line x1="200" y1="100" x2="780" y2="100" stroke="#B8860B" stroke-width="0.5" opacity="0.15"/>
-  <line x1="220" y1="60" x2="780" y2="60" stroke="#B8860B" stroke-width="0.3" opacity="0.1"/>
-  <line x1="220" y1="140" x2="780" y2="140" stroke="#B8860B" stroke-width="0.3" opacity="0.1"/>
-
-  <!-- === Emblem (centered at 100, 100) === -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 64" role="img" aria-label="thurbeen">
+  <!-- mark: the org root distributing to its projects -->
   <g>
-    <!-- Background energy field -->
-    <circle cx="100" cy="100" r="80" fill="url(#coreGlow)" opacity="0.1" filter="url(#glow)"/>
-
-    <!-- Outer battle ring -->
-    <circle cx="100" cy="100" r="65" fill="none" stroke="url(#energyGlow)" stroke-width="1.5" opacity="0.6" filter="url(#glow)"/>
-
-    <!-- Rotating shield emblems -->
-    <g opacity="0.25">
-      <animateTransform
-        attributeName="transform" attributeType="XML" type="rotate"
-        from="0 100 100" to="-360 100 100" dur="20s" repeatCount="indefinite"/>
-      <path d="M 100 45 L 105 50 L 105 57 L 100 62 L 95 57 L 95 50 Z" fill="url(#shieldGrad)" stroke="#FFD700" stroke-width="0.5"/>
-      <path d="M 100 45 L 105 50 L 105 57 L 100 62 L 95 57 L 95 50 Z" fill="url(#shieldGrad)" stroke="#FFD700" stroke-width="0.5" transform="rotate(90 100 100)"/>
-      <path d="M 100 45 L 105 50 L 105 57 L 100 62 L 95 57 L 95 50 Z" fill="url(#shieldGrad)" stroke="#FFD700" stroke-width="0.5" transform="rotate(180 100 100)"/>
-      <path d="M 100 45 L 105 50 L 105 57 L 100 62 L 95 57 L 95 50 Z" fill="url(#shieldGrad)" stroke="#FFD700" stroke-width="0.5" transform="rotate(270 100 100)"/>
+    <rect x="6" y="7" width="52" height="27" rx="8" fill="#1a080a"/>
+    <rect x="7.25" y="8.25" width="49.5" height="24.5" rx="6.75" fill="none" stroke="#ff5c54" stroke-width="2.5"/>
+    <text x="13" y="28" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="15" font-weight="700" fill="#6eff6e">~/</text>
+    <rect x="35" y="20.5" width="12" height="5.5" rx="1" fill="#6eff6e"/>
+    <g stroke="#ff5c54" stroke-width="1.8" fill="none" stroke-linecap="round">
+      <path d="M32 34 V40"/>
+      <path d="M14 40 H50"/>
+      <path d="M14 40 V44"/>
+      <path d="M32 40 V44"/>
+      <path d="M50 40 V44"/>
     </g>
-
-    <!-- Main rotating blades -->
-    <g filter="url(#dramaticShadow)">
-      <animateTransform
-        attributeName="transform" attributeType="XML" type="rotate"
-        from="0 100 100" to="360 100 100" dur="6s" repeatCount="indefinite"/>
-      <g>
-        <path d="M 100 100 L 95 42 L 100 35 L 110 37 L 117 47 L 104 90 Z" fill="url(#bladeMetal1)" stroke="#654321" stroke-width="0.8"/>
-        <path d="M 100 100 L 95 42 L 100 35 L 110 37 L 117 47 L 104 90 Z" fill="url(#bladeMetal1)" stroke="#654321" stroke-width="0.8" transform="rotate(45 100 100)"/>
-        <path d="M 100 100 L 95 42 L 100 35 L 110 37 L 117 47 L 104 90 Z" fill="url(#bladeMetal2)" stroke="#654321" stroke-width="0.8" transform="rotate(90 100 100)"/>
-        <path d="M 100 100 L 95 42 L 100 35 L 110 37 L 117 47 L 104 90 Z" fill="url(#bladeMetal1)" stroke="#654321" stroke-width="0.8" transform="rotate(135 100 100)"/>
-        <path d="M 100 100 L 95 42 L 100 35 L 110 37 L 117 47 L 104 90 Z" fill="url(#bladeMetal2)" stroke="#654321" stroke-width="0.8" transform="rotate(180 100 100)"/>
-        <path d="M 100 100 L 95 42 L 100 35 L 110 37 L 117 47 L 104 90 Z" fill="url(#bladeMetal1)" stroke="#654321" stroke-width="0.8" transform="rotate(225 100 100)"/>
-        <path d="M 100 100 L 95 42 L 100 35 L 110 37 L 117 47 L 104 90 Z" fill="url(#bladeMetal2)" stroke="#654321" stroke-width="0.8" transform="rotate(270 100 100)"/>
-        <path d="M 100 100 L 95 42 L 100 35 L 110 37 L 117 47 L 104 90 Z" fill="url(#bladeMetal1)" stroke="#654321" stroke-width="0.8" transform="rotate(315 100 100)"/>
-      </g>
-    </g>
-
-    <!-- Tactical grid overlay -->
-    <g opacity="0.15" stroke="#B8860B" stroke-width="0.3">
-      <circle cx="100" cy="100" r="50" fill="none"/>
-      <circle cx="100" cy="100" r="35" fill="none"/>
-      <line x1="100" y1="50" x2="100" y2="150"/>
-      <line x1="50" y1="100" x2="150" y2="100"/>
-    </g>
-
-    <!-- Central gear mechanism -->
-    <g>
-      <!-- Large outer gear -->
-      <g opacity="0.9">
-        <animateTransform
-          attributeName="transform" attributeType="XML" type="rotate"
-          from="0 100 100" to="360 100 100" dur="10s" repeatCount="indefinite"/>
-        <circle cx="100" cy="100" r="25" fill="url(#bladeMetal2)" stroke="#654321" stroke-width="1" filter="url(#dramaticShadow)"/>
-        <g fill="url(#bladeMetal1)" stroke="#654321" stroke-width="0.5">
-          <rect x="97.5" y="75" width="5" height="4" rx="0.5"/>
-          <rect x="97.5" y="75" width="5" height="4" rx="0.5" transform="rotate(30 100 100)"/>
-          <rect x="97.5" y="75" width="5" height="4" rx="0.5" transform="rotate(60 100 100)"/>
-          <rect x="97.5" y="75" width="5" height="4" rx="0.5" transform="rotate(90 100 100)"/>
-          <rect x="97.5" y="75" width="5" height="4" rx="0.5" transform="rotate(120 100 100)"/>
-          <rect x="97.5" y="75" width="5" height="4" rx="0.5" transform="rotate(150 100 100)"/>
-          <rect x="97.5" y="75" width="5" height="4" rx="0.5" transform="rotate(180 100 100)"/>
-          <rect x="97.5" y="75" width="5" height="4" rx="0.5" transform="rotate(210 100 100)"/>
-          <rect x="97.5" y="75" width="5" height="4" rx="0.5" transform="rotate(240 100 100)"/>
-          <rect x="97.5" y="75" width="5" height="4" rx="0.5" transform="rotate(270 100 100)"/>
-          <rect x="97.5" y="75" width="5" height="4" rx="0.5" transform="rotate(300 100 100)"/>
-          <rect x="97.5" y="75" width="5" height="4" rx="0.5" transform="rotate(330 100 100)"/>
-        </g>
-        <circle cx="100" cy="100" r="17" fill="none" stroke="#8B6914" stroke-width="1" opacity="0.7"/>
-      </g>
-
-      <!-- Medium gear (counter-rotating) -->
-      <g opacity="0.95">
-        <animateTransform
-          attributeName="transform" attributeType="XML" type="rotate"
-          from="0 100 100" to="-360 100 100" dur="15s" repeatCount="indefinite"/>
-        <circle cx="100" cy="100" r="15" fill="url(#coreGlow)" stroke="#B8860B" stroke-width="1" filter="url(#innerGlow)"/>
-        <g fill="url(#energyGlow)" stroke="#8B6914" stroke-width="0.5">
-          <rect x="98" y="85" width="4" height="3" rx="0.5"/>
-          <rect x="98" y="85" width="4" height="3" rx="0.5" transform="rotate(45 100 100)"/>
-          <rect x="98" y="85" width="4" height="3" rx="0.5" transform="rotate(90 100 100)"/>
-          <rect x="98" y="85" width="4" height="3" rx="0.5" transform="rotate(135 100 100)"/>
-          <rect x="98" y="85" width="4" height="3" rx="0.5" transform="rotate(180 100 100)"/>
-          <rect x="98" y="85" width="4" height="3" rx="0.5" transform="rotate(225 100 100)"/>
-          <rect x="98" y="85" width="4" height="3" rx="0.5" transform="rotate(270 100 100)"/>
-          <rect x="98" y="85" width="4" height="3" rx="0.5" transform="rotate(315 100 100)"/>
-        </g>
-      </g>
-
-      <!-- Center hub -->
-      <circle cx="100" cy="100" r="10" fill="url(#coreGlow)" filter="url(#glow)">
-        <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
-      </circle>
-
-      <!-- Center bolts -->
-      <circle cx="100" cy="92.5" r="1" fill="#654321"/>
-      <circle cx="107.5" cy="100" r="1" fill="#654321"/>
-      <circle cx="100" cy="107.5" r="1" fill="#654321"/>
-      <circle cx="92.5" cy="100" r="1" fill="#654321"/>
-
-      <!-- TB initials -->
-      <text x="100" y="107"
-            font-family="'Cinzel', 'Trajan Pro', 'Palatino Linotype', serif"
-            font-size="24" font-weight="900"
-            fill="#FFD700" text-anchor="middle"
-            stroke="#654321" stroke-width="1"
-            filter="url(#glow)">
-        TB
-      </text>
-    </g>
+    <rect x="9" y="45" width="10" height="10" rx="2.5" fill="#1a080a" stroke="#6eff6e" stroke-width="2.2"/>
+    <rect x="27" y="45" width="10" height="10" rx="2.5" fill="#1a080a" stroke="#ffb627" stroke-width="2.2"/>
+    <rect x="45" y="45" width="10" height="10" rx="2.5" fill="#1a080a" stroke="#ff5c54" stroke-width="2.2"/>
   </g>
-
-  <!-- === "Thurbeen" text === -->
-  <text x="490" y="118"
-        font-family="'Cinzel', 'Trajan Pro', 'Palatino Linotype', serif"
-        font-size="64" font-weight="700"
-        fill="url(#textGrad)" text-anchor="middle"
-        letter-spacing="8"
-        filter="url(#textGlow)">
-    THURBEEN
+  <!-- wordmark -->
+  <text x="76" y="44" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="34" font-weight="700" letter-spacing="-1">
+    <tspan fill="#f5e6e0">thur</tspan><tspan fill="#ff5c54">been</tspan>
   </text>
-
-  <!-- Thin accent line under text -->
-  <line x1="280" y1="138" x2="700" y2="138" stroke="url(#energyGlow)" stroke-width="1" opacity="0.4"/>
+  <!-- trailing cursor echoing the shell -->
+  <rect x="253" y="22" width="11" height="26" rx="1.5" fill="#6eff6e"/>
 </svg>
