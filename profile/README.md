@@ -12,7 +12,7 @@
 
 ## 📦 thurbox
 
-**[thurbox](https://github.com/Thurbeen/thurbox)** — TUI for agentic code orchestration, written in Rust. Several coding agents side by side in one terminal, each in a persistent session that survives crashes, restarts and reboots. Install it from **[homebrew-thurbox](https://github.com/Thurbeen/homebrew-thurbox)**.
+**[thurbox](https://github.com/Thurbeen/thurbox)** — TUI for agentic code orchestration, written in Rust. Several coding agents side by side in one terminal, each in a persistent session that survives crashes, restarts and reboots.
 
 ### 🧩 Plugins
 
