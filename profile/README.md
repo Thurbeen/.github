@@ -2,34 +2,38 @@
   <img src="https://raw.githubusercontent.com/Thurbeen/.github/main/figures/thurbeen-emblem.svg" width="360" alt="Thurbeen" />
 </p>
 
-<h3 align="center">Agentic orchestration, infrastructure, and games.</h3>
+<h3 align="center">Several coding agents, side by side in one terminal.</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/Lua-2C2D72?logo=lua&logoColor=white" alt="Lua" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Ruby-CC342D?logo=ruby&logoColor=white" alt="Ruby" />
-  <img src="https://img.shields.io/badge/Shell-4EAA25?logo=gnubash&logoColor=white" alt="Shell" />
-  <img src="https://img.shields.io/badge/Claude-D97757?logo=claude&logoColor=white" alt="Claude" />
+  <a href="https://thurbox.thurbeen.eu/">Website</a> ·
+  <a href="https://discord.gg/fGumcHaxFY">Discord</a> ·
+  <code>brew install thurbeen/thurbox/thurbox</code>
 </p>
 
-## 🤖 Agentic orchestration
+## 📦 thurbox
 
-- **[thurbox](https://github.com/Thurbeen/thurbox)** — TUI for agentic code orchestration, written in Rust. [thurbox.thurbeen.eu](https://thurbox.thurbeen.eu/)
-- **[homebrew-thurbox](https://github.com/Thurbeen/homebrew-thurbox)** — Homebrew tap: `brew install thurbeen/thurbox/thurbox`.
-- **[fleet-template](https://github.com/Thurbeen/fleet-template)** — Template control plane: a live map of your repos plus self-contained thurbox orchestration.
+**[thurbox](https://github.com/Thurbeen/thurbox)** — TUI for agentic code orchestration, written in Rust. Several coding agents side by side in one terminal, each in a persistent session that survives crashes, restarts and reboots. Install it from **[homebrew-thurbox](https://github.com/Thurbeen/homebrew-thurbox)**.
 
-## 🧩 thurbox panes
+### 🧩 Plugins
 
-- **[thurbox-info-panel](https://github.com/Thurbeen/thurbox-info-panel)** — Session, git, agent, usage and system readouts as a Lua pane.
-- **[thurbox-code-review](https://github.com/Thurbeen/thurbox-code-review)** — A session's worktree diff against its base branch, reviewable in the TUI.
-- **[thurbox-doom](https://github.com/Thurbeen/thurbox-doom)** — DOOM framed in a session surface, because a plugin API deserves a stress test.
+Every pane is a Lua file you own. These add to it:
 
-## 🧰 Developer tooling
+- **[thurbox-info-panel](https://github.com/Thurbeen/thurbox-info-panel)** — Session, git, agent, account quota and system readouts beside the terminal.
+- **[thurbox-code-review](https://github.com/Thurbeen/thurbox-code-review)** — A Review tab beside Agent and Shell: the session's diff against its base branch, with notes sent to the agent.
+- **[thurbox-automations](https://github.com/Thurbeen/thurbox-automations)** — A pane for scheduled automations: run, switch, create and edit them, and see why a run failed.
+- **[thurbox-auto-continue](https://github.com/Thurbeen/thurbox-auto-continue)** — When a Claude Code session hits its usage limit, waits for the reset and types `continue`, once. No LLM involved.
+- **[thurbox-doom](https://github.com/Thurbeen/thurbox-doom)** — DOOM as a tab of the agent pane.
 
-- **[thurview](https://github.com/Thurbeen/thurview)** — Guided, evidence-anchored reviews of agent-written code, read and answered in the browser.
-- **[gdcruiser](https://github.com/Thurbeen/gdcruiser)** — Validate and visualize your architecture rules in GDScript.
-- **[template](https://github.com/Thurbeen/template)** — Starter template for bootstrapping new Thurbeen projects.
-- **[thurarch](https://github.com/Thurbeen/thurarch)** — Opinionated Arch Linux install script.
-- **[ai-news](https://github.com/Thurbeen/ai-news)** — Self-updating site that summarizes AI news twice daily.
+## 🛰️ fleet
+
+**[fleet](https://github.com/Thurbeen/fleet)** — A control plane over thurbox. Give it a goal: it splits it into tasks, runs one worker session per task in the real repository, and hands you back pull requests to review.
+
+## 🧠 Agent skills
+
+- **[publish](https://github.com/Thurbeen/publish)** — Gates committed work before it leaves the machine: adversarial review, tests, lint and docs, then push, open the change request and answer every review.
+- **[thurview](https://github.com/Thurbeen/thurview)** — Your coding agent writes the review; you read it in the browser, anchored to the code, and approve it or send it back.
+
+## 🧰 More
+
+- **[gdcruiser](https://github.com/Thurbeen/gdcruiser)** — Static dependency analyzer for Godot: GDScript dependency graphs, cycle detection and architecture rules, ready for CI.
+- **[template](https://github.com/Thurbeen/template)** — Starter template for bootstrapping new projects.
