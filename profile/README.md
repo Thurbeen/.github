@@ -7,12 +7,22 @@
 <p align="center">
   <a href="https://thurbox.thurbeen.eu/">Website</a> ·
   <a href="https://discord.gg/fGumcHaxFY">Discord</a> ·
-  <code>brew install thurbeen/thurbox/thurbox</code>
+  <a href="https://thurbox.thurbeen.eu/docs/installation.html">Install</a>
 </p>
 
 ## 📦 thurbox
 
 **[thurbox](https://github.com/Thurbeen/thurbox)** — TUI for agentic code orchestration, written in Rust. Several coding agents side by side in one terminal, each in a persistent session that survives crashes, restarts and reboots.
+
+```bash
+# Linux / macOS
+curl -fsSL https://raw.githubusercontent.com/Thurbeen/thurbox/main/scripts/install.sh | sh
+```
+
+```powershell
+# Windows (PowerShell)
+irm https://raw.githubusercontent.com/Thurbeen/thurbox/main/scripts/install.ps1 | iex
+```
 
 ### 🧩 Plugins
 
