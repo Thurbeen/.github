@@ -20,7 +20,7 @@ Every pane is a Lua file you own. These add to it:
 
 - **[thurbox-info-panel](https://github.com/Thurbeen/thurbox-info-panel)** — Session, git, agent, account quota and system readouts beside the terminal.
 - **[thurbox-code-review](https://github.com/Thurbeen/thurbox-code-review)** — A Review tab beside Agent and Shell: the session's diff against its base branch, with notes sent to the agent.
-- **[thurbox-automations](https://github.com/Thurbeen/thurbox-automations)** — A pane for scheduled automations: run, switch, create and edit them, and see why a run failed.
+- **[thurbox-automations](https://github.com/Thurbeen/thurbox-automations)** — A pane for scheduled automations: run them, switch them on or off, create and edit them, and see why a run failed.
 - **[thurbox-auto-continue](https://github.com/Thurbeen/thurbox-auto-continue)** — When a Claude Code session hits its usage limit, waits for the reset and types `continue`, once. No LLM involved.
 - **[thurbox-doom](https://github.com/Thurbeen/thurbox-doom)** — DOOM as a tab of the agent pane.
 
