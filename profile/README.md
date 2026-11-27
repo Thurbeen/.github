@@ -24,7 +24,7 @@ curl -fsSL https://raw.githubusercontent.com/Thurbeen/thurbox/main/scripts/insta
 irm https://raw.githubusercontent.com/Thurbeen/thurbox/main/scripts/install.ps1 | iex
 ```
 
-### 🧩 Plugins
+### 🧩 Mods
 
 Every pane is a Lua file you own. These add to it:
 
@@ -39,6 +39,7 @@ Every pane is a Lua file you own. These add to it:
 **[Fleet](https://github.com/Thurbeen/thurbox/tree/main/docs/fleet)** — The engine under thurbox, shipped with it and installable on its own. You declare Tasks and the other resources; controllers spawn each agent session in its own workspace, send the brief, track pull requests and record the result.
 
 - **[vega](https://github.com/Thurbeen/vega)** — VEGA, a Mission Control for Fleet: one Task whose agent only dispatches work to worker Tasks, follows them and reports back.
+- **[herdr-fleetlens](https://github.com/Thurbeen/herdr-fleetlens)** — Fleet Lens for the Herdr app: a keyboard-first float over every Fleet resource kind, with Herdr's live sessions on top and a sidebar that wakes paused sessions.
 - **[fleet-reviewer](https://github.com/Thurbeen/fleet-reviewer)** — Fleet plugin that finds open pull and merge requests and starts one review Task per change, amended on every push until it merges or closes.
 - **[fleet-factory](https://github.com/Thurbeen/fleet-factory)** — Software factory on Fleet: ticket board to production and back, as infrastructure as code.
 - **[agent-observability](https://github.com/Thurbeen/agent-observability)** — Grafana dashboards, Prometheus alerts and an OpenTelemetry quick-start for Fleet, the thurbox interface and the agents they launch.
